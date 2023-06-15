@@ -35,11 +35,11 @@ export default {
 div.content-black {
     background-color: #1c1c1c;
     color: $colorFontWhite;
-    padding: 2rem 0;
+    padding: 2.5rem 0;
 }
 
 div.content-blue {
     background-color: $colorFontBlue;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 </style>
