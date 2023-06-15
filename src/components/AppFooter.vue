@@ -61,11 +61,7 @@
                 <div class="social-icons flex centered-flex between">
                     <h1>Follow us</h1>
                     <ul class="flex">
-                        <li><img src="../assets/img/footer-facebook.png" alt=""></li>
-                        <li><img src="../assets/img/footer-twitter.png" alt=""></li>
-                        <li><img src="../assets/img/footer-youtube.png" alt=""></li>
-                        <li><img src="../assets/img/footer-pinterest.png" alt=""></li>
-                        <li><img src="../assets/img/footer-periscope.png" alt=""></li>
+                        <li v-for="icon in iconsList"><img :src="icon" alt=""></li>
                     </ul>
                 </div>
             </div>
@@ -77,6 +73,10 @@
 export default {
     data() {
         return {
+            iconsList: [
+                "../assets/img/footer-facebook.png",
+                "../assets/img/footer-twitter.png"
+            ]
         }
     }
 }
