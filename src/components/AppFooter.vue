@@ -58,9 +58,14 @@
                 <div class="signUp">
                     <p>Sign-up now!</p>
                 </div>
-                <div class="social-icons">
-                    <ul>
-                        <li>BBBB</li>
+                <div class="social-icons flex centered-flex between">
+                    <h1>Follow us</h1>
+                    <ul class="flex">
+                        <li><img src="../assets/img/footer-facebook.png" alt=""></li>
+                        <li><img src="../assets/img/footer-twitter.png" alt=""></li>
+                        <li><img src="../assets/img/footer-youtube.png" alt=""></li>
+                        <li><img src="../assets/img/footer-pinterest.png" alt=""></li>
+                        <li><img src="../assets/img/footer-periscope.png" alt=""></li>
                     </ul>
                 </div>
             </div>
@@ -70,7 +75,10 @@
 
 <script>
 export default {
-
+    data() {
+        return {
+        }
+    }
 }
 </script>
 <style lang="scss" scoped>
@@ -130,6 +138,19 @@ div.footer-lower {
 
         p {
             color: $colorFontWhite;
+        }
+    }
+
+    div.social-icons {
+        h1 {
+            color: $colorFontBlue;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            margin-right: 1rem;
+        }
+
+        ul li {
+            margin-right: 1rem;
         }
     }
 
