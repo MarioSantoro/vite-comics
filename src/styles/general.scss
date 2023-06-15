@@ -12,11 +12,14 @@
 
 .flex {
     display: flex;
-    align-items: center;
 }
 
 .between {
     justify-content: space-between;
+}
+
+.centered-flex {
+    align-items: center;
 }
 
 ul {

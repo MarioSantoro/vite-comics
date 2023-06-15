@@ -1,5 +1,5 @@
 <template>
-    <header class="container flex between">
+    <header class="container flex between centered-flex">
         <div class="image-logo">
             <img src="../assets/img/dc-logo.png" alt="">
         </div>
@@ -90,7 +90,7 @@ header {
         font-weight: bold;
 
         a {
-            padding: 2rem 0;
+            padding: 2.8rem 0;
             color: black;
             text-decoration: none;
             text-transform: uppercase;
