@@ -54,7 +54,16 @@
             <img src="../assets/img/dc-logo-bg.png" alt="">
         </div>
         <div class="footer-lower">
-
+            <div class="container flex between">
+                <div class="signUp">
+                    <p>Sign-up now!</p>
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li>BBBB</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 </template>
@@ -100,9 +109,27 @@ footer {
         }
 
         img {
+            width: 620px;
             position: absolute;
             top: -70px;
-            left: 57%;
+            left: 55%;
+        }
+    }
+
+}
+
+div.footer-lower {
+    background-color: #303030;
+    padding: 2rem 0;
+
+    div.signUp {
+        border: 1px solid $colorFontBlue;
+        padding: .88rem 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        p {
+            color: $colorFontWhite;
         }
     }
 
