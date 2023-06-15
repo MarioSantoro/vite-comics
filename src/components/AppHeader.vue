@@ -6,8 +6,9 @@
             </div>
             <nav id="top-navbar">
                 <ul class="flex ">
-                    <li v-for="navItem in navBarTop">
-                        <a :class="navItem.active ? 'active' : 'non-active'" :href="navItem.link">{{ navItem.text }}</a>
+                    <li v-for="(navItem, index) in navBarTop">
+                        <a :class="navItem.active ? 'active' : 'non-active'" :href="navItem.link"
+                            @click="changeActive(index)">{{ navItem.text }}</a>
                     </li>
                 </ul>
             </nav>
@@ -71,6 +72,15 @@ export default {
                     active: false,
                 },
             ]
+        }
+    },
+
+    methods: {
+        changeActive(index) {
+            for (let i = 0; i < this.navBarTop.length; i++) {
+                this.navBarTop[i].active = false;
+            }
+            this.navBarTop[index].active = true;
         }
     }
 }
