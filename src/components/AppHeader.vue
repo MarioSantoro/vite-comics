@@ -1,15 +1,17 @@
 <template>
-    <header class="container flex between centered-flex">
-        <div class="image-logo">
-            <img src="../assets/img/dc-logo.png" alt="">
+    <header>
+        <div class="container flex between centered-flex">
+            <div class="image-logo">
+                <img src="../assets/img/dc-logo.png" alt="">
+            </div>
+            <nav id="top-navbar">
+                <ul class="flex ">
+                    <li v-for="navItem in navBarTop">
+                        <a :class="navItem.active ? 'active' : 'non-active'" :href="navItem.link">{{ navItem.text }}</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav id="top-navbar">
-            <ul class="flex ">
-                <li v-for="navItem in navBarTop">
-                    <a :class="navItem.active ? 'active' : 'non-active'" :href="navItem.link">{{ navItem.text }}</a>
-                </li>
-            </ul>
-        </nav>
     </header>
 </template>
 <script>
@@ -79,6 +81,7 @@ export default {
 
 header {
     padding: 1rem 0;
+    background-color: #fff;
 
     div.image-logo img {
         width: 80px;
