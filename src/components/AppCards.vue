@@ -15,11 +15,13 @@ export default {
 @use "../styles/utilities/variables.scss" as *;
 
 div.card {
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 30px);
+
+    margin-right: 30px;
 
     img {
         width: 100%;
-        height: 200px;
+        height: 170px;
     }
 
     ;
