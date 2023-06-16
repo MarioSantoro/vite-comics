@@ -9,7 +9,7 @@
             </div>
             <div class="content-black">
                 <div class=" container">
-                    <h1>Content</h1>
+                    <AppCards v-for="card in listCards" :cards="card" />
                 </div>
             </div>
         </section>
@@ -118,7 +118,7 @@ div.jumbo {
     position: relative;
 
     img {
-        height: 500px;
+        height: 450px;
         width: 100%;
         object-fit: cover;
         object-position: top;
@@ -129,13 +129,14 @@ div.jumbo {
         padding: .55rem 1.44rem;
         position: absolute;
 
-        left: 25%;
+        left: 20%;
         bottom: -15px;
 
         p {
             text-transform: uppercase;
             color: $colorFontWhite;
             font-weight: bold;
+            font-size: 1.2rem;
         }
     }
 }
@@ -146,7 +147,7 @@ div.content-black {
     padding: 2.5rem 0;
 }
 
-img div.content-blue {
+div.content-blue {
     background-color: $colorFontBlue;
     padding: 3rem 0;
 }

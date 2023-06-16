@@ -1,7 +1,9 @@
-<template ></template>
+<template></template>
 <script>
 export default {
-
+    props: {
+        cards: Object,
+    }
 }
 </script>
 <style lang="scss">
