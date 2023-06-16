@@ -3,6 +3,9 @@
         <section>
             <div class="jumbo">
                 <img src="../assets/img/jumbotron.jpg" alt="Jumbo image">
+                <div class="series">
+                    <p>Current Series</p>
+                </div>
             </div>
             <div class="content-black">
                 <div class=" container">
@@ -111,11 +114,30 @@ export default {
 @use "../styles/utilities/variables.scss" as *;
 
 
-div.jumbo img {
-    height: 500px;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
+div.jumbo {
+    position: relative;
+
+    img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    div.series {
+        background-color: $colorFontBlue;
+        padding: .55rem 1.44rem;
+        position: absolute;
+
+        left: 25%;
+        bottom: -15px;
+
+        p {
+            text-transform: uppercase;
+            color: $colorFontWhite;
+            font-weight: bold;
+        }
+    }
 }
 
 div.content-black {
