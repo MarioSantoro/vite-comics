@@ -8,7 +8,7 @@
                 </div>
             </div>
             <div class="content-black">
-                <div class=" container">
+                <div class="cards container flex wrap">
                     <AppCards v-for="card in listCards" :cards="card" />
                 </div>
             </div>
