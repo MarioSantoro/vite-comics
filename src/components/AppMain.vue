@@ -156,7 +156,12 @@ div.content-black {
         margin: 0 auto;
         background-color: $colorFontBlue;
         padding: .55rem 1.44rem;
+        transition: all 1s ease;
         cursor: pointer;
+    }
+
+    div.load-more:hover {
+        background-color: rgba($colorFontBlue , 0.7);
     }
 }
 

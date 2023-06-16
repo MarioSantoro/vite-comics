@@ -138,10 +138,17 @@ div.footer-lower {
         padding: .88rem 1rem;
         text-transform: uppercase;
         font-weight: bold;
+        transition: all 1s ease;
+        cursor: pointer;
 
         p {
             color: $colorFontWhite;
         }
+
+    }
+
+    div.signUp:hover {
+        background-color: $colorFontBlue;
     }
 
     div.social-icons {

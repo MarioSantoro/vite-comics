@@ -17,16 +17,20 @@ export default {
 
 div.card {
     width: calc(100% / 6 - 25px);
-
     margin-right: 25px;
     margin-bottom: 1rem;
+
 
     img {
         width: 100%;
         height: 175px;
-        margin-bottom: .88rem
+        margin-bottom: .88rem;
+        transition: all 1s ease;
+        cursor: pointer;
     }
 
-    ;
+    img:hover {
+        transform: scale(1.5);
+    }
 }
 </style>
