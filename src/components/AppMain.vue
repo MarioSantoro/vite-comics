@@ -11,6 +11,9 @@
                 <div class="cards container flex wrap">
                     <AppCards v-for="card in listCards" :cards="card" />
                 </div>
+                <div class="load-more">
+                    <p>Load more</p>
+                </div>
             </div>
         </section>
         <section>
@@ -145,6 +148,16 @@ div.content-black {
     background-color: #1c1c1c;
     color: $colorFontWhite;
     padding: 2.5rem 0;
+    padding-bottom: 1rem;
+
+    div.load-more {
+        width: 170px;
+        text-align: center;
+        margin: 0 auto;
+        background-color: $colorFontBlue;
+        padding: .55rem 1.44rem;
+        cursor: pointer;
+    }
 }
 
 div.content-blue {

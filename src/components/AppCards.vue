@@ -24,7 +24,7 @@ div.card {
     img {
         width: 100%;
         height: 175px;
-        margin-bottom: .55rem
+        margin-bottom: .88rem
     }
 
     ;
