@@ -2,7 +2,7 @@
     <div class="container">
         <ul class="flex between">
             <li v-for="item in listMerch" class="flex centered-flex">
-                <img :src="getImagePath('pippo')" alt="Image merch">
+                <img :src="getImagePath(item.image)" alt="Image merch">
                 <p>{{ item.text }}</p>
             </li>
         </ul>
@@ -38,7 +38,7 @@ export default {
     },
     methods: {
         getImagePath(img) {
-            return new URL(`../assets/${img}`, import.meta.url).href;
+            return new URL(`../assets/img/${img}`, import.meta.url).href;
         },
     }
 }
