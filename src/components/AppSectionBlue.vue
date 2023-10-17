@@ -2,7 +2,7 @@
     <div class="container">
         <ul class="flex between">
             <li v-for="item in listMerch" class="flex centered-flex">
-                <img :src="getImagePath(item.image)" alt="Image merch">
+                <img :src="getImagePath('pippo')" alt="Image merch">
                 <p>{{ item.text }}</p>
             </li>
         </ul>
@@ -14,23 +14,23 @@ export default {
         return {
             listMerch: [
                 {
-                    image: "../src/assets/img/buy-comics-digital-comics.png",
+                    image: "buy-comics-digital-comics.png",
                     text: "Digital Comics"
                 },
                 {
-                    image: "../src/assets/img/buy-comics-merchandise.png",
+                    image: "buy-comics-merchandise.png",
                     text: "Dc merchandise"
                 },
                 {
-                    image: "../src/assets/img/buy-comics-subscriptions.png",
+                    image: "buy-comics-subscriptions.png",
                     text: "subscriptions"
                 },
                 {
-                    image: "../src/assets/img/buy-comics-shop-locator.png",
+                    image: "buy-comics-shop-locator.png",
                     text: "comic shop locator"
                 },
                 {
-                    image: "../src/assets/img/buy-dc-power-visa.svg",
+                    image: "buy-dc-power-visa.svg",
                     text: "dc power visa"
                 },
             ]
