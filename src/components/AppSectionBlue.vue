@@ -14,23 +14,23 @@ export default {
         return {
             listMerch: [
                 {
-                    image: "buy-comics-digital-comics.png",
+                    image: "../src/assets/img/buy-comics-digital-comics.png",
                     text: "Digital Comics"
                 },
                 {
-                    image: "buy-comics-merchandise.png",
+                    image: "../src/assets/img/buy-comics-merchandise.png",
                     text: "Dc merchandise"
                 },
                 {
-                    image: "buy-comics-subscriptions.png",
+                    image: "../src/assets/img/buy-comics-subscriptions.png",
                     text: "subscriptions"
                 },
                 {
-                    image: "buy-comics-shop-locator.png",
+                    image: "../src/assets/img/buy-comics-shop-locator.png",
                     text: "comic shop locator"
                 },
                 {
-                    image: "buy-dc-power-visa.svg",
+                    image: "../src/assets/img/buy-dc-power-visa.svg",
                     text: "dc power visa"
                 },
             ]
